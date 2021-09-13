@@ -1,10 +1,10 @@
 package templates;
 
 public class UF {
-    int[] roots;
-    int[] sizes;
-    int total;
-    UF(int total) {
+    private int[] roots;
+    private int[] sizes;
+    private int total;
+    public UF(int total) {
         roots = new int[total];
         sizes = new int[total];
         this.total = total;
