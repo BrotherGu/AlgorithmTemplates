@@ -7,6 +7,10 @@ public class UF {
     public UF(int total) {
         roots = new int[total];
         sizes = new int[total];
+        for (int i = 0; i < total; i++) {
+            roots[i] = i;
+            sizes[i] = 1;
+        }
         this.total = total;
     }
     public void union(int x, int y) {
