@@ -22,6 +22,9 @@ public class PrefixSumCalculator {
             }
         }
     }
+
+    // r1, c1是长方形左上角的坐标
+    // r2, c2是长方形右下角的坐标
     int sum(int r1, int c1, int r2, int c2) {
         int sum = prefixSum[r2][c2];
         if (c1 > 0) {
