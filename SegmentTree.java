@@ -55,7 +55,6 @@ public class SegmentTree {
         if (start == end) {
             return 0;
         }
-        int mid = start + (end - start) / 2;
         long res = queryLarger(root.left, target) + queryLarger(root.right, target);
         return res;
     }
@@ -76,7 +75,6 @@ public class SegmentTree {
         if (start == end) {
             return 0;
         }
-        int mid = start + (end - start) / 2;
         long res = querySmaller(root.left, target) + querySmaller(root.right, target);
         return res;
     }
